@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.summary     = "campagne-#{s.version}"
   s.description = "A simple Rails 3 engine gem to manage and send newsletters."
 
-  s.add_dependency "rails", "3.2.3"
-  s.add_dependency "mysql2", "0.3.11"
+  s.add_dependency "rails", "~>4.1"
+  s.add_dependency "mysql2", "~> 0.3.11"
 
   s.files = `git ls-files`.split("\n")
   s.executables = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
