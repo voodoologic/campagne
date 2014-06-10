@@ -3,8 +3,6 @@ module Campagne
     has_and_belongs_to_many :campagne_lists
     has_many :campagne_deliveries  
 
-    attr_accessible :name, :subject, :body, :campagne_list_ids
-
     validates :name, :presence => true, :uniqueness => true
     validates :subject, :presence => true
     validates :body, :presence => true
